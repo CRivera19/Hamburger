@@ -1,0 +1,114 @@
+html {
+  scroll-behavior: smooth;
+}
+/* Typeface */
+h1, h2 {
+  font-family: 'Pacifico', cursive;
+}
+p , li {
+  font-family: 'Poppins', sans-serif;
+}
+/* Navigation */
+nav {
+  background-color: rgb(255, 0, 0);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1em 0;
+}
+nav h1 {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 150%;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li a {
+  margin-right: 1em;
+  color: black;
+  text-decoration: none;
+}
+.order {
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  font-size: 0.7rem;
+}
+/* Hero */
+#hero {
+  text-align: center;
+  background-color: rgba(255, 255, 0, 0.849);
+  padding: 2em;
+  font-size: 3rem;
+  background-image: url(./imgs/HSBG.png);
+  
+}
+#hero > h2, #hero > p {
+  background-color: red;
+  margin: auto;
+}
+#hero>h2 {
+  width: 750px;
+}
+#hero>p {
+  width: 800px;
+}
+
+/* About */
+#about {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 3em;
+  display: grid;
+  grid-template: 
+                "a a c"
+                "b b c"
+}
+#about h2 {
+  color: red;
+  font-size: 250%;
+  text-align: center;
+  grid-area: a;
+}
+#about p {
+  grid-area: b;
+  width: 70%;
+  font-size: 125%;
+  margin: auto;
+}
+#about img {
+  grid-area: c;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+/* Locations */
+#locations {
+  text-align: center;
+  background-color: rgb(101, 99, 99);
+  color: rgba(252, 252, 252, 0.981);
+  padding: 3em;
+}
+#locations h2 {
+  color: rgba(225, 225, 9, 0.824);
+  text-align: end;
+  font-size: 150%;
+}
+/* Contact */
+#contact {
+  background-color: rgb(255, 0, 0);
+  text-align:center;
+  color: white;
+  padding: 3em;
+}
+#contact h2 {
+  color: yellow;
+}
+/* Credit */
+#credit {
+  font-size: 50%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.5);
+  text-decoration: none;
+}
