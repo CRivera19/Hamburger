@@ -2,8 +2,16 @@ html {
   scroll-behavior: smooth;
 }
 /* Typeface */
-h1, h2 {
+h1, h2, h3 {
   font-family: 'Pacifico', cursive;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+  align-self: center;
+}
+p {
+  font-size: 1.8rem;
 }
 p , li {
   font-family: 'Poppins', sans-serif;
@@ -53,28 +61,52 @@ nav ul li a {
 }
 #hero>p {
   width: 800px;
+  font-size: 2.5rem;
+  color: white;
 }
-
+/* Menu */
+#menu {
+  background: red;
+  padding:2em;
+}
+#menu h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5em;
+}
+#menu p {
+  font-size: 1.5rem;
+  color:white;
+}
+#menu small {
+  font-size:1rem;
+  color:yellow;
+}
+.menu-item {
+  margin: 1.5em 0;
+}
+.menu-footer {
+  text-align: center;
+}
 /* About */
 #about {
   text-align: center;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(242, 255, 0);
   padding: 3em;
   display: grid;
   grid-template: 
-                "a a c"
-                "b b c"
+                "a a c c"
+                "b b c c"
 }
 #about h2 {
   color: red;
-  font-size: 250%;
   text-align: center;
+  align-self: center;
   grid-area: a;
 }
 #about p {
   grid-area: b;
-  width: 70%;
-  font-size: 125%;
+  width: 85%;
+  font-size: 1.8rem;
   margin: auto;
 }
 #about img {
@@ -89,11 +121,23 @@ nav ul li a {
   background-color: rgb(101, 99, 99);
   color: rgba(252, 252, 252, 0.981);
   padding: 3em;
+  display: grid;
+  grid-template: 
+                "b b a a"
+                "b b c c"
 }
 #locations h2 {
-  color: rgba(225, 225, 9, 0.824);
-  text-align: end;
-  font-size: 150%;
+  color: yellow;
+  grid-area: a;
+}
+#locations img {
+  grid-area: b;
+  width: 80%;
+}
+#locations p {
+  grid-area: c;
+  width: 80%;
+  margin: auto;
 }
 /* Contact */
 #contact {
@@ -107,8 +151,8 @@ nav ul li a {
 }
 /* Credit */
 #credit {
-  font-size: 50%;
   text-align: center;
   color: rgba(0, 0, 0, 0.5);
   text-decoration: none;
 }
+#credit p {font-size: 0.5rem;}
